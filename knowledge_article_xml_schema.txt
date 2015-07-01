@@ -1,0 +1,1142 @@
+string(23921) "<BusinessObject IDREF="934c68436065e717e2d7ca4e9992f112d80031cedc" Name="KnowledgeArticle" RecID="93ff1dc578befac22b3b4942eaa526ac85250bbcce"><FieldList><Field IDREF="934c6843606a5d1e78321e419591ff78faf045d401" Name="RecID">93ff1dc578befac22b3b4942eaa526ac85250bbcce</Field><Field IDREF="934c684360429222b03b094a08a9abfe3f5cdfa5d6" Name="CreatedDateTime">2015-04-07T15:56:08</Field><Field IDREF="934c684360fc04b9cbb28141c7aef01a49fff58215" Name="CreatedBy">Lipin, Galen</Field><Field IDREF="934c684360b4f5b347a8d"...
+class SimpleXMLElement#4 (3) {
+  public $@attributes =>
+  array(3) {
+    'IDREF' =>
+    string(42) "934c68436065e717e2d7ca4e9992f112d80031cedc"
+    'Name' =>
+    string(16) "KnowledgeArticle"
+    'RecID' =>
+    string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+  }
+  public $FieldList =>
+  class SimpleXMLElement#5 (1) {
+    public $Field =>
+    array(52) {
+      [0] =>
+      string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+      [1] =>
+      string(19) "2015-04-07T15:56:08"
+      [2] =>
+      string(12) "Lipin, Galen"
+      [3] =>
+      string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+      [4] =>
+      string(19) "2015-05-29T15:04:09"
+      [5] =>
+      string(22) "Higgins, Benjamin John"
+      [6] =>
+      string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+      [7] =>
+      class SimpleXMLElement#7 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "934c684360f7d3f85755724d438bfce4774dedd712"
+          'Name' =>
+          string(11) "OwnedByTeam"
+        }
+      }
+      [8] =>
+      class SimpleXMLElement#8 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "934c68436059d9bcba82824e9b851c260db994e979"
+          'Name' =>
+          string(13) "OwnedByTeamID"
+        }
+      }
+      [9] =>
+      class SimpleXMLElement#9 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "934c684360d2c861f8993644938f6e5a0c154621b3"
+          'Name' =>
+          string(7) "OwnedBy"
+        }
+      }
+      [10] =>
+      class SimpleXMLElement#10 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "934c684360d897bfcfe22a4ff39538683d76beccb4"
+          'Name' =>
+          string(9) "OwnedByID"
+        }
+      }
+      [11] =>
+      string(27) "THIS IS A KNOWLEDGE ARTICLE"
+      [12] =>
+      string(128) "THIS IS A KNOWLEDGE ARTICLE
+ 
+sdafkjhdsafkljh
+asd
+asd
+asd
+ 
+ 
+ 
+<b>this is bold</b>
+<a href="daskjhafsdkjh">adsffadsdsfa</a>"
+      [13] =>
+      string(5) "11034"
+      [14] =>
+      string(19) "0001-01-01T00:00:00"
+      [15] =>
+      string(14) "Auto Generated"
+      [16] =>
+      string(14) "Auto Generated"
+      [17] =>
+      string(14) "Auto Generated"
+      [18] =>
+      string(12) "Lipin, Galen"
+      [19] =>
+      string(27) "THIS IS A KNOWLEDGE ARTICLE"
+      [20] =>
+      string(9) "Submitted"
+      [21] =>
+      string(10) "0001-01-01"
+      [22] =>
+      string(5) "FALSE"
+      [23] =>
+      string(4) "TRUE"
+      [24] =>
+      class SimpleXMLElement#11 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "9378b73261db477dd9572749079ca3c168b732a4d9"
+          'Name' =>
+          string(7) "Details"
+        }
+      }
+      [25] =>
+      string(27) "Cherwell Service Management"
+      [26] =>
+      string(27) "THIS IS A KNOWLEDGE ARTICLE"
+      [27] =>
+      class SimpleXMLElement#12 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "938d8d93ea7ad2c44e674748ad80f790f60fa6dc10"
+          'Name' =>
+          string(9) "ArticleID"
+        }
+      }
+      [28] =>
+      string(11) "Known Error"
+      [29] =>
+      string(27) "THIS IS A KNOWLEDGE ARTICLE"
+      [30] =>
+      string(19) "0001-01-01T00:00:00"
+      [31] =>
+      string(1) "0"
+      [32] =>
+      string(1) "0"
+      [33] =>
+      class SimpleXMLElement#13 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93bb0cc5be03562b9260d04e108d7854ea8dbab39c"
+          'Name' =>
+          string(12) "OwnedByEmail"
+        }
+      }
+      [34] =>
+      string(1) "1"
+      [35] =>
+      string(1) "0"
+      [36] =>
+      class SimpleXMLElement#14 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93c2b3f752f62fc78b68ef4bce97826f08c4f31273"
+          'Name' =>
+          string(14) "SelectedStatus"
+        }
+      }
+      [37] =>
+      string(6) "Review"
+      [38] =>
+      string(6) "Review"
+      [39] =>
+      class SimpleXMLElement#15 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93c2b3f9535eb86e8bcc1944c69c93ddac774e3c29"
+          'Name' =>
+          string(17) "NextStatusOneStep"
+        }
+      }
+      [40] =>
+      string(5) "FALSE"
+      [41] =>
+      string(5) "FALSE"
+      [42] =>
+      string(42) "93f4a8cc2c34e88fe6f9554082a57d0ceefb375816"
+      [43] =>
+      class SimpleXMLElement#16 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93d38d7996171a799587fa4b2ca2742f0b84dd8d9e"
+          'Name' =>
+          string(15) "ApprovalBlockID"
+        }
+      }
+      [44] =>
+      class SimpleXMLElement#17 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93d4bc243919594efd4c3240448fb68cd1e9c90eb0"
+          'Name' =>
+          string(16) "Temp_OwnedByTeam"
+        }
+      }
+      [45] =>
+      class SimpleXMLElement#18 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93d4bc26a7da837b132ab44378afd41c25fe46b2e7"
+          'Name' =>
+          string(12) "Temp_OwnedBy"
+        }
+      }
+      [46] =>
+      string(10) "KA Details"
+      [47] =>
+      string(10) "KA Details"
+      [48] =>
+      string(5) "FALSE"
+      [49] =>
+      string(13) ",Lipin, Galen"
+      [50] =>
+      string(6) "Public"
+      [51] =>
+      class SimpleXMLElement#19 (1) {
+        public $@attributes =>
+        array(2) {
+          'IDREF' =>
+          string(42) "93ed1763de6e94bf91db63428d9082bb034c0f4f5d"
+          'Name' =>
+          string(9) "ProblemID"
+        }
+      }
+    }
+  }
+  public $RelationshipList =>
+  class SimpleXMLElement#6 (1) {
+    public $Relationship =>
+    array(3) {
+      [0] =>
+      class SimpleXMLElement#19 (2) {
+        public $@attributes =>
+        array(5) {
+          'IDREF' =>
+          string(42) "93c4abb7a97916093e8b7a43f2ac0401e0c4a08a3e"
+          'Name' =>
+          string(30) "Knowledge Links Knowledge Type"
+          'TargetObjectID' =>
+          string(42) "93c4aba1c066bf2e70367746a0a8c63dfd307f3455"
+          'TargetObjectName' =>
+          string(20) "KnowledgeArticleType"
+          'Type' =>
+          string(6) "Linked"
+        }
+        public $BusinessObject =>
+        string(11) "Known Error"
+      }
+      [1] =>
+      class SimpleXMLElement#18 (2) {
+        public $@attributes =>
+        array(5) {
+          'IDREF' =>
+          string(42) "93d33ddbde2aa1f06e0f324c5d948176092a1da712"
+          'Name' =>
+          string(23) "Knowledge Owns Journals"
+          'TargetObjectID' =>
+          string(42) "93412229b83eaaff2558214509a09c332117c70cf9"
+          'TargetObjectName' =>
+          string(7) "Journal"
+          'Type' =>
+          string(4) "Owns"
+        }
+        public $BusinessObject =>
+        array(6) {
+          [0] =>
+          class SimpleXMLElement#16 (2) {
+            public $@attributes =>
+            array(3) {
+              'IDREF' =>
+              string(42) "934d8181ba9d3a6a506d7643e1bc71f70fa9b47412"
+              'Name' =>
+              string(11) "JournalNote"
+              'RecID' =>
+              string(42) "93ff1dc800225a8b78142d4cd0aae7f4dba713b234"
+            }
+            public $FieldList =>
+            class SimpleXMLElement#10 (1) {
+              public $Field =>
+              array(22) {
+                [0] =>
+                string(42) "93ff1dc800225a8b78142d4cd0aae7f4dba713b234"
+                [1] =>
+                string(42) "934d8181ba9d3a6a506d7643e1bc71f70fa9b47412"
+                [2] =>
+                string(14) "Journal - Note"
+                [3] =>
+                string(19) "2015-04-07T15:57:13"
+                [4] =>
+                string(12) "Lipin, Galen"
+                [5] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [6] =>
+                string(19) "2015-04-07T15:57:17"
+                [7] =>
+                string(12) "Lipin, Galen"
+                [8] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [9] =>
+                string(19) "0001-01-01T00:00:00"
+                [10] =>
+                string(15) "Help Desk Staff"
+                [11] =>
+                string(42) "93dc8109cee25eac30365a4ad2bc364833327fb7ed"
+                [12] =>
+                string(12) "Lipin, Galen"
+                [13] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [14] =>
+                class SimpleXMLElement#9 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "9341222a14b40f469a7c304f8d91c1ff8442d44689"
+                    'Name' =>
+                    string(12) "ParentTypeID"
+                  }
+                }
+                [15] =>
+                string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+                [16] =>
+                string(27) "THIS IS A KNOWLEDGE ARTICLE"
+                [17] =>
+                string(6) "Normal"
+                [18] =>
+                string(5) "FALSE"
+                [19] =>
+                class SimpleXMLElement#8 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "936929e9250b31ddfdab9e454d9432e599bf4c366c"
+                    'Name' =>
+                    string(12) "QuickJournal"
+                  }
+                }
+                [20] =>
+                class SimpleXMLElement#7 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93aa191ec9e984afa9877e4eafbb73f285a1ff1565"
+                    'Name' =>
+                    string(11) "SubParentID"
+                  }
+                }
+                [21] =>
+                string(4) "TRUE"
+              }
+            }
+          }
+          [1] =>
+          class SimpleXMLElement#15 (2) {
+            public $@attributes =>
+            array(3) {
+              'IDREF' =>
+              string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+              'Name' =>
+              string(14) "JournalHistory"
+              'RecID' =>
+              string(42) "93ff1dc8c4cd7ba49512c149dda4bb774aeaf1a811"
+            }
+            public $FieldList =>
+            class SimpleXMLElement#10 (1) {
+              public $Field =>
+              array(25) {
+                [0] =>
+                string(42) "93ff1dc8c4cd7ba49512c149dda4bb774aeaf1a811"
+                [1] =>
+                string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+                [2] =>
+                string(17) "Journal - History"
+                [3] =>
+                string(19) "2015-04-07T15:57:33"
+                [4] =>
+                string(12) "Lipin, Galen"
+                [5] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [6] =>
+                string(19) "0001-01-01T00:00:00"
+                [7] =>
+                class SimpleXMLElement#7 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b8f307ad95d4de4eb9ab051f93f2d60743"
+                    'Name' =>
+                    string(9) "LastModBy"
+                  }
+                }
+                [8] =>
+                class SimpleXMLElement#8 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b85c2944d86a9c4f8daf28d94e590f7085"
+                    'Name' =>
+                    string(11) "LastModByID"
+                  }
+                }
+                [9] =>
+                string(19) "0001-01-01T00:00:00"
+                [10] =>
+                string(15) "Help Desk Staff"
+                [11] =>
+                string(42) "93dc8109cee25eac30365a4ad2bc364833327fb7ed"
+                [12] =>
+                string(12) "Lipin, Galen"
+                [13] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [14] =>
+                class SimpleXMLElement#9 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "9341222a14b40f469a7c304f8d91c1ff8442d44689"
+                    'Name' =>
+                    string(12) "ParentTypeID"
+                  }
+                }
+                [15] =>
+                string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+                [16] =>
+                string(157) "The following changes were made to the Knowledge Article 11034 by ADMIN\glipin on 4/7/2015:
+
+Field Status was changed from the value New to the value Draft.
+"
+                [17] =>
+                class SimpleXMLElement#20 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "934d80f165833c9d64ddec47fc909b998cb59fabff"
+                    'Name' =>
+                    string(11) "HistoryType"
+                  }
+                }
+                [18] =>
+                string(5) "FALSE"
+                [19] =>
+                class SimpleXMLElement#21 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93aa191ec9e984afa9877e4eafbb73f285a1ff1565"
+                    'Name' =>
+                    string(11) "SubParentID"
+                  }
+                }
+                [20] =>
+                class SimpleXMLElement#22 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988ad8dd12874b8f1148cc902f2e9981f5cf15"
+                    'Name' =>
+                    string(14) "AuditFieldName"
+                  }
+                }
+                [21] =>
+                class SimpleXMLElement#23 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988b4f5d58c8de773246c0bf9317fa816ebe32"
+                    'Name' =>
+                    string(18) "AuditFieldOldValue"
+                  }
+                }
+                [22] =>
+                class SimpleXMLElement#24 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988bce83553f6e67614ff49e1868311c735c2d"
+                    'Name' =>
+                    string(18) "AuditFieldNewValue"
+                  }
+                }
+                [23] =>
+                class SimpleXMLElement#25 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c798ab0462ebf6d250d5426eb80710f36e232b9c"
+                    'Name' =>
+                    string(12) "AuditFieldID"
+                  }
+                }
+                [24] =>
+                string(4) "TRUE"
+              }
+            }
+          }
+          [2] =>
+          class SimpleXMLElement#14 (2) {
+            public $@attributes =>
+            array(3) {
+              'IDREF' =>
+              string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+              'Name' =>
+              string(14) "JournalHistory"
+              'RecID' =>
+              string(42) "93ff1dc8d6c8c1d5aaba5441ed89e767572e7c0bc3"
+            }
+            public $FieldList =>
+            class SimpleXMLElement#10 (1) {
+              public $Field =>
+              array(25) {
+                [0] =>
+                string(42) "93ff1dc8d6c8c1d5aaba5441ed89e767572e7c0bc3"
+                [1] =>
+                string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+                [2] =>
+                string(17) "Journal - History"
+                [3] =>
+                string(19) "2015-04-07T15:57:35"
+                [4] =>
+                string(12) "Lipin, Galen"
+                [5] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [6] =>
+                string(19) "0001-01-01T00:00:00"
+                [7] =>
+                class SimpleXMLElement#25 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b8f307ad95d4de4eb9ab051f93f2d60743"
+                    'Name' =>
+                    string(9) "LastModBy"
+                  }
+                }
+                [8] =>
+                class SimpleXMLElement#24 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b85c2944d86a9c4f8daf28d94e590f7085"
+                    'Name' =>
+                    string(11) "LastModByID"
+                  }
+                }
+                [9] =>
+                string(19) "0001-01-01T00:00:00"
+                [10] =>
+                string(15) "Help Desk Staff"
+                [11] =>
+                string(42) "93dc8109cee25eac30365a4ad2bc364833327fb7ed"
+                [12] =>
+                string(12) "Lipin, Galen"
+                [13] =>
+                string(42) "93d7e060b47616c042499a4d25829d551a2c6fecee"
+                [14] =>
+                class SimpleXMLElement#23 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "9341222a14b40f469a7c304f8d91c1ff8442d44689"
+                    'Name' =>
+                    string(12) "ParentTypeID"
+                  }
+                }
+                [15] =>
+                string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+                [16] =>
+                string(163) "The following changes were made to the Knowledge Article 11034 by ADMIN\glipin on 4/7/2015:
+
+Field Status was changed from the value Draft to the value Submitted.
+"
+                [17] =>
+                class SimpleXMLElement#22 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "934d80f165833c9d64ddec47fc909b998cb59fabff"
+                    'Name' =>
+                    string(11) "HistoryType"
+                  }
+                }
+                [18] =>
+                string(5) "FALSE"
+                [19] =>
+                class SimpleXMLElement#21 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93aa191ec9e984afa9877e4eafbb73f285a1ff1565"
+                    'Name' =>
+                    string(11) "SubParentID"
+                  }
+                }
+                [20] =>
+                class SimpleXMLElement#20 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988ad8dd12874b8f1148cc902f2e9981f5cf15"
+                    'Name' =>
+                    string(14) "AuditFieldName"
+                  }
+                }
+                [21] =>
+                class SimpleXMLElement#9 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988b4f5d58c8de773246c0bf9317fa816ebe32"
+                    'Name' =>
+                    string(18) "AuditFieldOldValue"
+                  }
+                }
+                [22] =>
+                class SimpleXMLElement#8 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988bce83553f6e67614ff49e1868311c735c2d"
+                    'Name' =>
+                    string(18) "AuditFieldNewValue"
+                  }
+                }
+                [23] =>
+                class SimpleXMLElement#7 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c798ab0462ebf6d250d5426eb80710f36e232b9c"
+                    'Name' =>
+                    string(12) "AuditFieldID"
+                  }
+                }
+                [24] =>
+                string(4) "TRUE"
+              }
+            }
+          }
+          [3] =>
+          class SimpleXMLElement#13 (2) {
+            public $@attributes =>
+            array(3) {
+              'IDREF' =>
+              string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+              'Name' =>
+              string(14) "JournalHistory"
+              'RecID' =>
+              string(42) "9401ca8dde108c0508a34646e9a72be906177d0253"
+            }
+            public $FieldList =>
+            class SimpleXMLElement#10 (1) {
+              public $Field =>
+              array(25) {
+                [0] =>
+                string(42) "9401ca8dde108c0508a34646e9a72be906177d0253"
+                [1] =>
+                string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+                [2] =>
+                string(17) "Journal - History"
+                [3] =>
+                string(19) "2015-05-29T14:32:41"
+                [4] =>
+                string(22) "Higgins, Benjamin John"
+                [5] =>
+                string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+                [6] =>
+                string(19) "0001-01-01T00:00:00"
+                [7] =>
+                class SimpleXMLElement#7 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b8f307ad95d4de4eb9ab051f93f2d60743"
+                    'Name' =>
+                    string(9) "LastModBy"
+                  }
+                }
+                [8] =>
+                class SimpleXMLElement#8 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b85c2944d86a9c4f8daf28d94e590f7085"
+                    'Name' =>
+                    string(11) "LastModByID"
+                  }
+                }
+                [9] =>
+                string(19) "0001-01-01T00:00:00"
+                [10] =>
+                string(18) "Network Operations"
+                [11] =>
+                string(42) "93b1efcac1c59dabf2fa2d475c94a61378d9be8834"
+                [12] =>
+                string(22) "Higgins, Benjamin John"
+                [13] =>
+                string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+                [14] =>
+                class SimpleXMLElement#9 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "9341222a14b40f469a7c304f8d91c1ff8442d44689"
+                    'Name' =>
+                    string(12) "ParentTypeID"
+                  }
+                }
+                [15] =>
+                string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+                [16] =>
+                string(240) "The following changes were made to the Knowledge Article 11034 by ADMIN\bjhiggins on 5/29/2015:
+
+Field Solution was changed from the value THIS IS A KNOWLEDGE ARTICLE to the value THIS IS A KNOWLEDGE ARTICLE
+ 
+sdafkjhdsafkljh
+asd
+asd
+asd.
+"
+                [17] =>
+                class SimpleXMLElement#20 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "934d80f165833c9d64ddec47fc909b998cb59fabff"
+                    'Name' =>
+                    string(11) "HistoryType"
+                  }
+                }
+                [18] =>
+                string(5) "FALSE"
+                [19] =>
+                class SimpleXMLElement#21 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93aa191ec9e984afa9877e4eafbb73f285a1ff1565"
+                    'Name' =>
+                    string(11) "SubParentID"
+                  }
+                }
+                [20] =>
+                class SimpleXMLElement#22 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988ad8dd12874b8f1148cc902f2e9981f5cf15"
+                    'Name' =>
+                    string(14) "AuditFieldName"
+                  }
+                }
+                [21] =>
+                class SimpleXMLElement#23 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988b4f5d58c8de773246c0bf9317fa816ebe32"
+                    'Name' =>
+                    string(18) "AuditFieldOldValue"
+                  }
+                }
+                [22] =>
+                class SimpleXMLElement#24 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988bce83553f6e67614ff49e1868311c735c2d"
+                    'Name' =>
+                    string(18) "AuditFieldNewValue"
+                  }
+                }
+                [23] =>
+                class SimpleXMLElement#25 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c798ab0462ebf6d250d5426eb80710f36e232b9c"
+                    'Name' =>
+                    string(12) "AuditFieldID"
+                  }
+                }
+                [24] =>
+                string(4) "TRUE"
+              }
+            }
+          }
+          [4] =>
+          class SimpleXMLElement#12 (2) {
+            public $@attributes =>
+            array(3) {
+              'IDREF' =>
+              string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+              'Name' =>
+              string(14) "JournalHistory"
+              'RecID' =>
+              string(42) "9401ca8f904a3b280db79b457ea69f6b8d426d974d"
+            }
+            public $FieldList =>
+            class SimpleXMLElement#10 (1) {
+              public $Field =>
+              array(25) {
+                [0] =>
+                string(42) "9401ca8f904a3b280db79b457ea69f6b8d426d974d"
+                [1] =>
+                string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+                [2] =>
+                string(17) "Journal - History"
+                [3] =>
+                string(19) "2015-05-29T14:33:24"
+                [4] =>
+                string(22) "Higgins, Benjamin John"
+                [5] =>
+                string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+                [6] =>
+                string(19) "0001-01-01T00:00:00"
+                [7] =>
+                class SimpleXMLElement#25 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b8f307ad95d4de4eb9ab051f93f2d60743"
+                    'Name' =>
+                    string(9) "LastModBy"
+                  }
+                }
+                [8] =>
+                class SimpleXMLElement#24 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b85c2944d86a9c4f8daf28d94e590f7085"
+                    'Name' =>
+                    string(11) "LastModByID"
+                  }
+                }
+                [9] =>
+                string(19) "0001-01-01T00:00:00"
+                [10] =>
+                string(18) "Network Operations"
+                [11] =>
+                string(42) "93b1efcac1c59dabf2fa2d475c94a61378d9be8834"
+                [12] =>
+                string(22) "Higgins, Benjamin John"
+                [13] =>
+                string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+                [14] =>
+                class SimpleXMLElement#23 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "9341222a14b40f469a7c304f8d91c1ff8442d44689"
+                    'Name' =>
+                    string(12) "ParentTypeID"
+                  }
+                }
+                [15] =>
+                string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+                [16] =>
+                string(341) "The following changes were made to the Knowledge Article 11034 by ADMIN\bjhiggins on 5/29/2015:
+
+Field Solution was changed from the value THIS IS A KNOWLEDGE ARTICLE
+ 
+sdafkjhdsafkljh
+asd
+asd
+asd to the value THIS IS A KNOWLEDGE ARTICLE
+ 
+sdafkjhdsafkljh
+asd
+asd
+asd
+ 
+ 
+ 
+<b>this is bold</b>
+<a href="daskjhafsdkjh">adsffadsdsfa</a>.
+"
+                [17] =>
+                class SimpleXMLElement#22 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "934d80f165833c9d64ddec47fc909b998cb59fabff"
+                    'Name' =>
+                    string(11) "HistoryType"
+                  }
+                }
+                [18] =>
+                string(5) "FALSE"
+                [19] =>
+                class SimpleXMLElement#21 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93aa191ec9e984afa9877e4eafbb73f285a1ff1565"
+                    'Name' =>
+                    string(11) "SubParentID"
+                  }
+                }
+                [20] =>
+                class SimpleXMLElement#20 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988ad8dd12874b8f1148cc902f2e9981f5cf15"
+                    'Name' =>
+                    string(14) "AuditFieldName"
+                  }
+                }
+                [21] =>
+                class SimpleXMLElement#9 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988b4f5d58c8de773246c0bf9317fa816ebe32"
+                    'Name' =>
+                    string(18) "AuditFieldOldValue"
+                  }
+                }
+                [22] =>
+                class SimpleXMLElement#8 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988bce83553f6e67614ff49e1868311c735c2d"
+                    'Name' =>
+                    string(18) "AuditFieldNewValue"
+                  }
+                }
+                [23] =>
+                class SimpleXMLElement#7 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c798ab0462ebf6d250d5426eb80710f36e232b9c"
+                    'Name' =>
+                    string(12) "AuditFieldID"
+                  }
+                }
+                [24] =>
+                string(4) "TRUE"
+              }
+            }
+          }
+          [5] =>
+          class SimpleXMLElement#11 (2) {
+            public $@attributes =>
+            array(3) {
+              'IDREF' =>
+              string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+              'Name' =>
+              string(14) "JournalHistory"
+              'RecID' =>
+              string(42) "9401cad79e682455249fe64cc6a96506743dc99cfe"
+            }
+            public $FieldList =>
+            class SimpleXMLElement#10 (1) {
+              public $Field =>
+              array(25) {
+                [0] =>
+                string(42) "9401cad79e682455249fe64cc6a96506743dc99cfe"
+                [1] =>
+                string(42) "934d80e020e2eb4359e59c47168f69db78f7fd9541"
+                [2] =>
+                string(17) "Journal - History"
+                [3] =>
+                string(19) "2015-05-29T15:04:09"
+                [4] =>
+                string(22) "Higgins, Benjamin John"
+                [5] =>
+                string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+                [6] =>
+                string(19) "0001-01-01T00:00:00"
+                [7] =>
+                class SimpleXMLElement#7 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b8f307ad95d4de4eb9ab051f93f2d60743"
+                    'Name' =>
+                    string(9) "LastModBy"
+                  }
+                }
+                [8] =>
+                class SimpleXMLElement#8 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93412229b85c2944d86a9c4f8daf28d94e590f7085"
+                    'Name' =>
+                    string(11) "LastModByID"
+                  }
+                }
+                [9] =>
+                string(19) "0001-01-01T00:00:00"
+                [10] =>
+                string(18) "Network Operations"
+                [11] =>
+                string(42) "93b1efcac1c59dabf2fa2d475c94a61378d9be8834"
+                [12] =>
+                string(22) "Higgins, Benjamin John"
+                [13] =>
+                string(42) "93d7e0654c356371def4c34882b5946f04d808536a"
+                [14] =>
+                class SimpleXMLElement#9 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "9341222a14b40f469a7c304f8d91c1ff8442d44689"
+                    'Name' =>
+                    string(12) "ParentTypeID"
+                  }
+                }
+                [15] =>
+                string(42) "93ff1dc578befac22b3b4942eaa526ac85250bbcce"
+                [16] =>
+                string(411) "The following changes were made to the Knowledge Article 11034 by ADMIN\bjhiggins on 5/29/2015:
+
+Field Solution was changed from the value THIS IS A KNOWLEDGE ARTICLE
+ 
+sdafkjhdsafkljh
+asd
+asd
+asd
+ 
+ 
+ 
+<b>this is bold</b>
+<a href="daskjhafsdkjh">adsffadsdsfa</a> to the value THIS IS A KNOWLEDGE ARTICLE
+ 
+sdafkjhdsafkljh
+asd
+asd
+asd
+ 
+ 
+ 
+<b>this is bold</b>
+<a href="daskjhafsdkjh">adsffadsdsfa</a>.
+"
+                [17] =>
+                class SimpleXMLElement#20 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "934d80f165833c9d64ddec47fc909b998cb59fabff"
+                    'Name' =>
+                    string(11) "HistoryType"
+                  }
+                }
+                [18] =>
+                string(5) "FALSE"
+                [19] =>
+                class SimpleXMLElement#21 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93aa191ec9e984afa9877e4eafbb73f285a1ff1565"
+                    'Name' =>
+                    string(11) "SubParentID"
+                  }
+                }
+                [20] =>
+                class SimpleXMLElement#22 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988ad8dd12874b8f1148cc902f2e9981f5cf15"
+                    'Name' =>
+                    string(14) "AuditFieldName"
+                  }
+                }
+                [21] =>
+                class SimpleXMLElement#23 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988b4f5d58c8de773246c0bf9317fa816ebe32"
+                    'Name' =>
+                    string(18) "AuditFieldOldValue"
+                  }
+                }
+                [22] =>
+                class SimpleXMLElement#24 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c7988bce83553f6e67614ff49e1868311c735c2d"
+                    'Name' =>
+                    string(18) "AuditFieldNewValue"
+                  }
+                }
+                [23] =>
+                class SimpleXMLElement#25 (1) {
+                  public $@attributes =>
+                  array(2) {
+                    'IDREF' =>
+                    string(42) "93c798ab0462ebf6d250d5426eb80710f36e232b9c"
+                    'Name' =>
+                    string(12) "AuditFieldID"
+                  }
+                }
+                [24] =>
+                string(4) "TRUE"
+              }
+            }
+          }
+        }
+      }
+      [2] =>
+      class SimpleXMLElement#17 (2) {
+        public $@attributes =>
+        array(5) {
+          'IDREF' =>
+          string(42) "93c764cc9e7cdc40e5d3a54756b726966cf2ca485c"
+          'Name' =>
+          string(25) "Knowledge Links to Status"
+          'TargetObjectID' =>
+          string(42) "93c2b3eded6ca4617e3c3b44978bb8d4765530b94a"
+          'TargetObjectName' =>
+          string(15) "KnowledgeStatus"
+          'Type' =>
+          string(6) "Linked"
+        }
+        public $BusinessObject =>
+        string(9) "Submitted"
+      }
+    }
+  }
+}
+
+
+
+

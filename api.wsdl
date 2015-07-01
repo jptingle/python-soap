@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://cherwellsoftware.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://cherwellsoftware.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://cherwellsoftware.com">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MobileLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="preferences" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MobileLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileLoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginWithProductCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="module" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginWithProductCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginWithProductCodeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logout">
+        <s:complexType />
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LogoutResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MobileLogout">
+        <s:complexType />
+      </s:element>
+      <s:element name="MobileLogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MobileLogoutResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetiCherwellCredentialsMode">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetiCherwellCredentialsModeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetiCherwellCredentialsModeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServiceInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastError">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLastErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastErrorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastError2">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLastError2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="errMsg1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errMsg2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBusinessObjectDefinition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nameOrId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBusinessObjectDefinitionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBusinessObjectDefinitionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryByFieldValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fieldNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryByFieldValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryByFieldValueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryByStoredQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryNameOrId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryByStoredQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryByStoredQueryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryByStoredQueryWithScope">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="scope" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="scopeOwner" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryByStoredQueryWithScopeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryByStoredQueryWithScopeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBusinessObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busObRecId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBusinessObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBusinessObjectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBusinessObjectByPublicId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busObPublicId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBusinessObjectByPublicIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBusinessObjectByPublicIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBusinessObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="creationXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBusinessObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateBusinessObjectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBusinessObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busObRecId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updateXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBusinessObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateBusinessObjectResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBusinessObjectByPublicId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busObPublicId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updateXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBusinessObjectByPublicIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateBusinessObjectByPublicIdResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApiVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetApiVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApiVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfirmLoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTabBarOptions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iPhoneImages" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTabBarOptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTabBarOptionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMruForObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="includeSystem" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="forceRefresh" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMruForObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMruForObjectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearMruForObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearMruForObjectResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetItemList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentLocation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="forceRefresh" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemListWithParentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentLocation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="forceRefresh" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemListWithParentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemListWithParentInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDashboard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dashboardId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="alertOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateMru" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordLimit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDashboardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDashboardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDashboardWithSizes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dashboardId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="alertOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateMru" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="widgetWidth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="widgetHeight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordLimit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDashboardWithSizesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDashboardWithSizesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="queryId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateMru" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordLimit" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="allowPromptInfo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="proximityThreshold" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="proximitySortAsc" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryResultsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryResultsUsingPromptInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="queryId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateMru" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordLimit" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="queryInputs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="proximityThreshold" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="proximitySortAsc" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryResultsUsingPromptInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryResultsUsingPromptInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemDisplayHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="includeActions" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionCargo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemDisplayHtmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemDisplayHtmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParametersForAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParametersForActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParametersForActionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objectType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionInputs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnNewHtmlOnSuccess" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnAvailableActionsOnSuccess" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionCargo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteActionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LookupScanCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scanCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objectNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionCargo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LookupScanCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LookupScanCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="imageIds" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="width" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="height" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetImagesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetDataAtPos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="widgetId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordLimit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetDataAtPosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForWidgetDataAtPosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentsForBusinessObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busObRecId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentsForBusinessObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttachmentsForBusinessObjectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttachmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAttachmentToRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="busObRecId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAttachmentToRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddAttachmentToRecordResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetDataAtPosWithSizes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="widgetId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="widgetWidth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="widgetHeight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="recordLimit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetDataAtPosWithSizesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForWidgetDataAtPosWithSizesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="widgetId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForWidgetImageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetImageWithSizes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="widgetId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="widgetWidth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="widgetHeight" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForWidgetImageWithSizesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForWidgetImageWithSizesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuickSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busObNameOrId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="searchText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nonFinalOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="finalOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="timeLimitCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeLimitUnits" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuickSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuickSearchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="MobileLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:MobileLogin" />
+  </wsdl:message>
+  <wsdl:message name="MobileLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:MobileLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginWithProductCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginWithProductCode" />
+  </wsdl:message>
+  <wsdl:message name="LoginWithProductCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginWithProductCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="MobileLogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:MobileLogout" />
+  </wsdl:message>
+  <wsdl:message name="MobileLogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:MobileLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetiCherwellCredentialsModeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetiCherwellCredentialsMode" />
+  </wsdl:message>
+  <wsdl:message name="GetiCherwellCredentialsModeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetiCherwellCredentialsModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastErrorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastError" />
+  </wsdl:message>
+  <wsdl:message name="GetLastErrorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastError2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastError2" />
+  </wsdl:message>
+  <wsdl:message name="GetLastError2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastError2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetBusinessObjectDefinitionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBusinessObjectDefinition" />
+  </wsdl:message>
+  <wsdl:message name="GetBusinessObjectDefinitionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBusinessObjectDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryByFieldValueSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryByFieldValue" />
+  </wsdl:message>
+  <wsdl:message name="QueryByFieldValueSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryByFieldValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryByStoredQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:QueryByStoredQuery" />
+  </wsdl:message>
+  <wsdl:message name="QueryByStoredQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:QueryByStoredQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryByStoredQueryWithScopeSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryByStoredQueryWithScope" />
+  </wsdl:message>
+  <wsdl:message name="QueryByStoredQueryWithScopeSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryByStoredQueryWithScopeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBusinessObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBusinessObject" />
+  </wsdl:message>
+  <wsdl:message name="GetBusinessObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBusinessObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBusinessObjectByPublicIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBusinessObjectByPublicId" />
+  </wsdl:message>
+  <wsdl:message name="GetBusinessObjectByPublicIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBusinessObjectByPublicIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateBusinessObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateBusinessObject" />
+  </wsdl:message>
+  <wsdl:message name="CreateBusinessObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateBusinessObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBusinessObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBusinessObject" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBusinessObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBusinessObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBusinessObjectByPublicIdSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBusinessObjectByPublicId" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBusinessObjectByPublicIdSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBusinessObjectByPublicIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApiVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApiVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetApiVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApiVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmLogin" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTabBarOptionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTabBarOptions" />
+  </wsdl:message>
+  <wsdl:message name="GetTabBarOptionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTabBarOptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMruForObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMruForObject" />
+  </wsdl:message>
+  <wsdl:message name="GetMruForObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMruForObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearMruForObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearMruForObject" />
+  </wsdl:message>
+  <wsdl:message name="ClearMruForObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearMruForObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemList" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListWithParentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemListWithParentInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListWithParentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemListWithParentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDashboardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDashboard" />
+  </wsdl:message>
+  <wsdl:message name="GetDashboardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDashboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDashboardWithSizesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDashboardWithSizes" />
+  </wsdl:message>
+  <wsdl:message name="GetDashboardWithSizesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDashboardWithSizesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQueryResults" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryResultsUsingPromptInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQueryResultsUsingPromptInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryResultsUsingPromptInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryResultsUsingPromptInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemDisplayHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemDisplayHtml" />
+  </wsdl:message>
+  <wsdl:message name="GetItemDisplayHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemDisplayHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParametersForActionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParametersForAction" />
+  </wsdl:message>
+  <wsdl:message name="GetParametersForActionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParametersForActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteActionSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteAction" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteActionSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="LookupScanCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:LookupScanCode" />
+  </wsdl:message>
+  <wsdl:message name="LookupScanCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:LookupScanCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetImagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetImages" />
+  </wsdl:message>
+  <wsdl:message name="GetImagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetDataAtPosSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetDataAtPos" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetDataAtPosSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetDataAtPosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentsForBusinessObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttachmentsForBusinessObject" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentsForBusinessObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttachmentsForBusinessObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttachment" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentToRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAttachmentToRecord" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentToRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAttachmentToRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetDataAtPosWithSizesSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetDataAtPosWithSizes" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetDataAtPosWithSizesSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetDataAtPosWithSizesResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetImageSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetImage" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetImageSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetImageWithSizesSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetImageWithSizes" />
+  </wsdl:message>
+  <wsdl:message name="QueryForWidgetImageWithSizesSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForWidgetImageWithSizesResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuickSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:QuickSearch" />
+  </wsdl:message>
+  <wsdl:message name="QuickSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:QuickSearchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="apiSoap">
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Establish a session and log in.</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MobileLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Establish a session and log in for mobile devices.</wsdl:documentation>
+      <wsdl:input message="tns:MobileLoginSoapIn" />
+      <wsdl:output message="tns:MobileLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginWithProductCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Establish a session and log in, with a specified product code.</wsdl:documentation>
+      <wsdl:input message="tns:LoginWithProductCodeSoapIn" />
+      <wsdl:output message="tns:LoginWithProductCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Close down a session and Logout</wsdl:documentation>
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MobileLogout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Close down a mobile session and Logout</wsdl:documentation>
+      <wsdl:input message="tns:MobileLogoutSoapIn" />
+      <wsdl:output message="tns:MobileLogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetiCherwellCredentialsMode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the required login mode for iCherwell - 0 means can store User ID and Password, 1 iCherwell can store the User ID, but must prompt for Password, 2 meansiCherwell must prompt for both the User ID and Password.</wsdl:documentation>
+      <wsdl:input message="tns:GetiCherwellCredentialsModeSoapIn" />
+      <wsdl:output message="tns:GetiCherwellCredentialsModeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns CherwellService info such as the required login mode for Cherwell Mobile apps and the current version of Cherwell</wsdl:documentation>
+      <wsdl:input message="tns:GetServiceInfoSoapIn" />
+      <wsdl:output message="tns:GetServiceInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastError">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the last error that occurred in the session.</wsdl:documentation>
+      <wsdl:input message="tns:GetLastErrorSoapIn" />
+      <wsdl:output message="tns:GetLastErrorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastError2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the last error.  Return header and sub-header messages.</wsdl:documentation>
+      <wsdl:input message="tns:GetLastError2SoapIn" />
+      <wsdl:output message="tns:GetLastError2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObjectDefinition">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a business object definition.</wsdl:documentation>
+      <wsdl:input message="tns:GetBusinessObjectDefinitionSoapIn" />
+      <wsdl:output message="tns:GetBusinessObjectDefinitionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryByFieldValue">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Query for a specific field value.</wsdl:documentation>
+      <wsdl:input message="tns:QueryByFieldValueSoapIn" />
+      <wsdl:output message="tns:QueryByFieldValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryByStoredQuery">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Query using a specific stored query.</wsdl:documentation>
+      <wsdl:input message="tns:QueryByStoredQuerySoapIn" />
+      <wsdl:output message="tns:QueryByStoredQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryByStoredQueryWithScope">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Query using a specific stored query with scope.</wsdl:documentation>
+      <wsdl:input message="tns:QueryByStoredQueryWithScopeSoapIn" />
+      <wsdl:output message="tns:QueryByStoredQueryWithScopeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves a business object based on its record ID.</wsdl:documentation>
+      <wsdl:input message="tns:GetBusinessObjectSoapIn" />
+      <wsdl:output message="tns:GetBusinessObjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObjectByPublicId">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves a business object based on its public ID.</wsdl:documentation>
+      <wsdl:input message="tns:GetBusinessObjectByPublicIdSoapIn" />
+      <wsdl:output message="tns:GetBusinessObjectByPublicIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateBusinessObject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a new business object and populate it based on the passed XML.</wsdl:documentation>
+      <wsdl:input message="tns:CreateBusinessObjectSoapIn" />
+      <wsdl:output message="tns:CreateBusinessObjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBusinessObject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Locates a business object by its RecID and updates it based on the passed XML.</wsdl:documentation>
+      <wsdl:input message="tns:UpdateBusinessObjectSoapIn" />
+      <wsdl:output message="tns:UpdateBusinessObjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBusinessObjectByPublicId">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Locates a business object by its RecID and updates it based on the passed XML.</wsdl:documentation>
+      <wsdl:input message="tns:UpdateBusinessObjectByPublicIdSoapIn" />
+      <wsdl:output message="tns:UpdateBusinessObjectByPublicIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApiVersion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns official version number</wsdl:documentation>
+      <wsdl:input message="tns:GetApiVersionSoapIn" />
+      <wsdl:output message="tns:GetApiVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Confirm connectivity and login credentials.</wsdl:documentation>
+      <wsdl:input message="tns:ConfirmLoginSoapIn" />
+      <wsdl:output message="tns:ConfirmLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTabBarOptions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets a list of all of the available items for the tab bar, in the default order.</wsdl:documentation>
+      <wsdl:input message="tns:GetTabBarOptionsSoapIn" />
+      <wsdl:output message="tns:GetTabBarOptionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMruForObject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the items that should appear on a list of objects</wsdl:documentation>
+      <wsdl:input message="tns:GetMruForObjectSoapIn" />
+      <wsdl:output message="tns:GetMruForObjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearMruForObject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Removes all entries in the MRU for the specified object type and ID</wsdl:documentation>
+      <wsdl:input message="tns:ClearMruForObjectSoapIn" />
+      <wsdl:output message="tns:ClearMruForObjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the items that should appear on a list of objects</wsdl:documentation>
+      <wsdl:input message="tns:GetItemListSoapIn" />
+      <wsdl:output message="tns:GetItemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListWithParentInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the items that should appear on a list of objects and includes parent information</wsdl:documentation>
+      <wsdl:input message="tns:GetItemListWithParentInfoSoapIn" />
+      <wsdl:output message="tns:GetItemListWithParentInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboard">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the contents of the specified dashboard, including images for items.</wsdl:documentation>
+      <wsdl:input message="tns:GetDashboardSoapIn" />
+      <wsdl:output message="tns:GetDashboardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboardWithSizes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the contents of the specified dashboard, including images for items.</wsdl:documentation>
+      <wsdl:input message="tns:GetDashboardWithSizesSoapIn" />
+      <wsdl:output message="tns:GetDashboardWithSizesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryResults">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the results of a specified query.</wsdl:documentation>
+      <wsdl:input message="tns:GetQueryResultsSoapIn" />
+      <wsdl:output message="tns:GetQueryResultsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryResultsUsingPromptInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This returns the results of a specified query.</wsdl:documentation>
+      <wsdl:input message="tns:GetQueryResultsUsingPromptInfoSoapIn" />
+      <wsdl:output message="tns:GetQueryResultsUsingPromptInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemDisplayHtml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves the html to display a business object.</wsdl:documentation>
+      <wsdl:input message="tns:GetItemDisplayHtmlSoapIn" />
+      <wsdl:output message="tns:GetItemDisplayHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParametersForAction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the list of parameters needed by the specified action.</wsdl:documentation>
+      <wsdl:input message="tns:GetParametersForActionSoapIn" />
+      <wsdl:output message="tns:GetParametersForActionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteAction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Executes a specified action against a specified record.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteActionSoapIn" />
+      <wsdl:output message="tns:ExecuteActionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LookupScanCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Executes a specified action against a specified record.</wsdl:documentation>
+      <wsdl:input message="tns:LookupScanCodeSoapIn" />
+      <wsdl:output message="tns:LookupScanCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns encoded versions of the specified images.</wsdl:documentation>
+      <wsdl:input message="tns:GetImagesSoapIn" />
+      <wsdl:output message="tns:GetImagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetDataAtPos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves widget data for specified x,y position in widget</wsdl:documentation>
+      <wsdl:input message="tns:QueryForWidgetDataAtPosSoapIn" />
+      <wsdl:output message="tns:QueryForWidgetDataAtPosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentsForBusinessObject">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves a list of attachments associated with a business object.</wsdl:documentation>
+      <wsdl:input message="tns:GetAttachmentsForBusinessObjectSoapIn" />
+      <wsdl:output message="tns:GetAttachmentsForBusinessObjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves the specified attachment</wsdl:documentation>
+      <wsdl:input message="tns:GetAttachmentSoapIn" />
+      <wsdl:output message="tns:GetAttachmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachmentToRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adds an attachment to the specified record</wsdl:documentation>
+      <wsdl:input message="tns:AddAttachmentToRecordSoapIn" />
+      <wsdl:output message="tns:AddAttachmentToRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetDataAtPosWithSizes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves widget data for specified x,y position in widget</wsdl:documentation>
+      <wsdl:input message="tns:QueryForWidgetDataAtPosWithSizesSoapIn" />
+      <wsdl:output message="tns:QueryForWidgetDataAtPosWithSizesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves widget image</wsdl:documentation>
+      <wsdl:input message="tns:QueryForWidgetImageSoapIn" />
+      <wsdl:output message="tns:QueryForWidgetImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetImageWithSizes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves widget image</wsdl:documentation>
+      <wsdl:input message="tns:QueryForWidgetImageWithSizesSoapIn" />
+      <wsdl:output message="tns:QueryForWidgetImageWithSizesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves results of a quick search for a particular busob type</wsdl:documentation>
+      <wsdl:input message="tns:QuickSearchSoapIn" />
+      <wsdl:output message="tns:QuickSearchSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="apiSoap" type="tns:apiSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://cherwellsoftware.com/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobileLogin">
+      <soap:operation soapAction="http://cherwellsoftware.com/MobileLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginWithProductCode">
+      <soap:operation soapAction="http://cherwellsoftware.com/LoginWithProductCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://cherwellsoftware.com/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobileLogout">
+      <soap:operation soapAction="http://cherwellsoftware.com/MobileLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetiCherwellCredentialsMode">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetiCherwellCredentialsMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceInfo">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetServiceInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastError">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetLastError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastError2">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetLastError2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObjectDefinition">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetBusinessObjectDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryByFieldValue">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryByFieldValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryByStoredQuery">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryByStoredQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryByStoredQueryWithScope">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryByStoredQueryWithScope" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObject">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetBusinessObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObjectByPublicId">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetBusinessObjectByPublicId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBusinessObject">
+      <soap:operation soapAction="http://cherwellsoftware.com/CreateBusinessObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBusinessObject">
+      <soap:operation soapAction="http://cherwellsoftware.com/UpdateBusinessObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBusinessObjectByPublicId">
+      <soap:operation soapAction="http://cherwellsoftware.com/UpdateBusinessObjectByPublicId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApiVersion">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetApiVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmLogin">
+      <soap:operation soapAction="http://cherwellsoftware.com/ConfirmLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTabBarOptions">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetTabBarOptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMruForObject">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetMruForObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearMruForObject">
+      <soap:operation soapAction="http://cherwellsoftware.com/ClearMruForObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemList">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetItemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListWithParentInfo">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetItemListWithParentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboard">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetDashboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboardWithSizes">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetDashboardWithSizes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryResults">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetQueryResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryResultsUsingPromptInfo">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetQueryResultsUsingPromptInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemDisplayHtml">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetItemDisplayHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParametersForAction">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetParametersForAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteAction">
+      <soap:operation soapAction="http://cherwellsoftware.com/ExecuteAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LookupScanCode">
+      <soap:operation soapAction="http://cherwellsoftware.com/LookupScanCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImages">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetDataAtPos">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryForWidgetDataAtPos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentsForBusinessObject">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetAttachmentsForBusinessObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachment">
+      <soap:operation soapAction="http://cherwellsoftware.com/GetAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachmentToRecord">
+      <soap:operation soapAction="http://cherwellsoftware.com/AddAttachmentToRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetDataAtPosWithSizes">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryForWidgetDataAtPosWithSizes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetImage">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryForWidgetImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetImageWithSizes">
+      <soap:operation soapAction="http://cherwellsoftware.com/QueryForWidgetImageWithSizes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearch">
+      <soap:operation soapAction="http://cherwellsoftware.com/QuickSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="apiSoap12" type="tns:apiSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://cherwellsoftware.com/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobileLogin">
+      <soap12:operation soapAction="http://cherwellsoftware.com/MobileLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginWithProductCode">
+      <soap12:operation soapAction="http://cherwellsoftware.com/LoginWithProductCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://cherwellsoftware.com/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobileLogout">
+      <soap12:operation soapAction="http://cherwellsoftware.com/MobileLogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetiCherwellCredentialsMode">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetiCherwellCredentialsMode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceInfo">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetServiceInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastError">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetLastError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastError2">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetLastError2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObjectDefinition">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetBusinessObjectDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryByFieldValue">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryByFieldValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryByStoredQuery">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryByStoredQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryByStoredQueryWithScope">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryByStoredQueryWithScope" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObject">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetBusinessObject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessObjectByPublicId">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetBusinessObjectByPublicId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBusinessObject">
+      <soap12:operation soapAction="http://cherwellsoftware.com/CreateBusinessObject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBusinessObject">
+      <soap12:operation soapAction="http://cherwellsoftware.com/UpdateBusinessObject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBusinessObjectByPublicId">
+      <soap12:operation soapAction="http://cherwellsoftware.com/UpdateBusinessObjectByPublicId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApiVersion">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetApiVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmLogin">
+      <soap12:operation soapAction="http://cherwellsoftware.com/ConfirmLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTabBarOptions">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetTabBarOptions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMruForObject">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetMruForObject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearMruForObject">
+      <soap12:operation soapAction="http://cherwellsoftware.com/ClearMruForObject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemList">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetItemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListWithParentInfo">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetItemListWithParentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboard">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetDashboard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboardWithSizes">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetDashboardWithSizes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryResults">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetQueryResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryResultsUsingPromptInfo">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetQueryResultsUsingPromptInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemDisplayHtml">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetItemDisplayHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParametersForAction">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetParametersForAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteAction">
+      <soap12:operation soapAction="http://cherwellsoftware.com/ExecuteAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LookupScanCode">
+      <soap12:operation soapAction="http://cherwellsoftware.com/LookupScanCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImages">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetImages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetDataAtPos">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryForWidgetDataAtPos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentsForBusinessObject">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetAttachmentsForBusinessObject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachment">
+      <soap12:operation soapAction="http://cherwellsoftware.com/GetAttachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachmentToRecord">
+      <soap12:operation soapAction="http://cherwellsoftware.com/AddAttachmentToRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetDataAtPosWithSizes">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryForWidgetDataAtPosWithSizes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetImage">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryForWidgetImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForWidgetImageWithSizes">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QueryForWidgetImageWithSizes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearch">
+      <soap12:operation soapAction="http://cherwellsoftware.com/QuickSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="api">
+    <wsdl:port name="apiSoap" binding="tns:apiSoap">
+      <soap:address location="http://cherwell5pprd.wpi.edu/CherwellService/api.asmx" />
+    </wsdl:port>
+    <wsdl:port name="apiSoap12" binding="tns:apiSoap12">
+      <soap12:address location="http://cherwell5pprd.wpi.edu/CherwellService/api.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
